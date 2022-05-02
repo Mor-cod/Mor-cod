@@ -1,0 +1,32 @@
+print('Circulating machin published by mor-cod')
+print('-----------------------------------------')
+movement = ""
+circulating = False
+while True:
+    movement = input("# ").lower()
+    if movement == 'circle':
+        if circulating:
+            print('Gig had already circulated')
+        else:
+             circulating = True
+             print('Gig is circulating')
+    elif movement == 'stop':
+        if not circulating:
+            print('It had already stopped')
+        else:
+             circulating = False
+             print('Gig has stopped')
+    elif movement == 'quit':
+        print('Game over')
+        break
+    elif movement == 'help':
+        print("""
+circle...... Gig start circulating
+stop........ Gig stopped
+quit........ Quit game    
+        """)
+    else:
+        print("sorry I am confused.")
+
+print('-----------------------------------------')
+print('Circulating machin published by mor-cod')
